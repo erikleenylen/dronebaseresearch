@@ -40,6 +40,8 @@ scalefactor = 1.317
 
 x = dfmanhattan['Longitude'][:17000]
 y = dfmanhattan["Latitude"][:17000]*scalefactor
+
+# specify number of points on which to train the clusters
 npoints = -1
 points = np.array(zip(x[:npoints],y[:npoints]))
 X = points # making a copy for easy use
